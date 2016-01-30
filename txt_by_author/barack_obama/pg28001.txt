@@ -1,45 +1,4 @@
-﻿The Project Gutenberg eBook of Inaugural Presidential Address, by Barack
-Hussein Obama
-
-
-This eBook is for the use of anyone anywhere at no cost and with
-almost no restrictions whatsoever.  You may copy it, give it away or
-re-use it under the terms of the Project Gutenberg License included
-with this eBook or online at www.gutenberg.org
-
-
-
-
-
-Title: Inaugural Presidential Address
-       Official Transcript
-
-
-Author: Barack Hussein Obama
-
-
-
-Release Date: January 20, 2009  [eBook #28001]
-Last updated: January 27, 2013
-
-Language: English
-
-Character set encoding: ISO-646-US (US-ASCII)
-
-
-***START OF THE PROJECT GUTENBERG EBOOK INAUGURAL PRESIDENTIAL ADDRESS***
-
-This file contains President Barack Obama's two inaugural addresses,
-Tuesday, January 20, 2009 and Monday, January 21, 2013.
-
-
-
-
-Text of President Barack Obama's first inaugural address on Tuesday, as
-prepared for delivery and released by the Presidential Inaugural
-Committee.
-
-OBAMA: My fellow citizens:
+﻿My fellow citizens:
 
 I stand here today humbled by the task before us, grateful for the trust
 you have bestowed, mindful of the sacrifices borne by our ancestors. I
