@@ -21,7 +21,7 @@ minibatch_size=75
 g = open('./sentence_batch_per_author.csv', 'w')
 
 for author in authors:
-	e = open('./'+author+'_sentences.txt', 'w')
+#	e = open('./'+author+'_sentences.txt', 'w')
 	print author
 	filename='./'+author+'/'+author+'.txt'
 	f = open(filename)
@@ -40,7 +40,7 @@ for author in authors:
 		if sentence == '':
 			continue
 		sentence=re.sub(r"(\s'\s)+", r' ', sentence)
-		e.write(sentence+'\n')
+#		e.write(sentence+'\n')
 		text_minibatch.append(sentence)
 	author_minibatch_corpus=[]
 	for i in xrange(int(len(text_minibatch)/minibatch_size)):
@@ -52,23 +52,29 @@ for author in authors:
 	minibatch_corpus.append(author_minibatch_corpus)
 	text = ' '.join(text_minibatch)
 	corpus.append(text)
-	e.close()
+#	e.close()
 g.close()
 
-f = open('test_corpus.txt', 'w')
-for line in corpus:
-	f.write(line+'\n')
-f.close()
+#f = open('test_corpus.txt', 'w')
+#for line in corpus:
+#	f.write(line+'\n')
+#f.close()
 
-for author, sentences in zip(authors, minibatch_corpus):
-	f = open(author+'_minibatch.txt', 'w')
-	for sentence in sentences:
-		f.write(sentence+'\n')
-	f.close()
+#for author, sentences in zip(authors, minibatch_corpus):
+#	f = open(author+'_minibatch.txt', 'w')
+#	for sentence in sentences:
+#		f.write(sentence+'\n')
+#	f.close()
 
-#TFIDF=TfidfVectorizer(input='content', strip_accents='ascii', stop_words='english', lowercase=True, analyzer='word', ngram_range=(1,1), min_df = 0)
+#TFIDF=TfidfVectorizer(input='content', strip_accents='ascii', stop_words='english', lowercase=True, analyzer='word', max_features=10000, min_df = 0)
 #tfidf = TFIDF.fit_transform(corpus)
-#tfidf_minibatch = [TFIDF.transform(author_minibatch) for author_minibatch in minibatch_corpus]
+#tfidf_minibatch_merged = [sentence for author_minibatch in minibatch_corpus for sentence in author_minibatch]
+#tfidf_minibatch = TFIDF.transform(tfidf_minibatch_merged).todense()
 
-
-
+#np.savetxt('./test_matrix', tfidf_minibatch)
+#f = open('./novel_tfidf_vectors', 'w')
+#for i, author_minibatch in zip(xrange(len(minibatch_corpus)), tfidf_minibatch):
+#	for vector in author_minibatch:
+		#print vector[1]
+		#f.write(str(vector)+' '+str(i))
+#f.close()
