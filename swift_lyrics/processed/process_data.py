@@ -16,7 +16,7 @@ authors=authors.split()
 
 corpus = []
 minibatch_corpus=[]
-minibatch_size=75
+minibatch_size=10
 
 g = open('./sentence_batch_per_author.csv', 'w')
 
